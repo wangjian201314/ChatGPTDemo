@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C9C942222A4C33AC002383EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942212A4C33AC002383EE /* AppDelegate.swift */; };
-		C9C942242A4C33AD002383EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942232A4C33AC002383EE /* SceneDelegate.swift */; };
 		C9C942262A4C33AD002383EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942252A4C33AD002383EE /* ViewController.swift */; };
 		C9C942292A4C33AD002383EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9C942272A4C33AD002383EE /* Main.storyboard */; };
 		C9C9422B2A4C33B0002383EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9C9422A2A4C33B0002383EE /* Assets.xcassets */; };
@@ -16,6 +15,19 @@
 		C9C942392A4C33B0002383EE /* ChatGPTDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942382A4C33B0002383EE /* ChatGPTDemoTests.swift */; };
 		C9C942432A4C33B0002383EE /* ChatGPTDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942422A4C33B0002383EE /* ChatGPTDemoUITests.swift */; };
 		C9C942452A4C33B0002383EE /* ChatGPTDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942442A4C33B0002383EE /* ChatGPTDemoUITestsLaunchTests.swift */; };
+		C9C942552A4C364B002383EE /* ChatGPTRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942522A4C364A002383EE /* ChatGPTRequest.swift */; };
+		C9C942562A4C364B002383EE /* ChatGPTResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942532A4C364A002383EE /* ChatGPTResponse.swift */; };
+		C9C942572A4C364B002383EE /* ChatGPTService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942542A4C364A002383EE /* ChatGPTService.swift */; };
+		C9C942672A4C36CF002383EE /* DatabaseManager+ChatGPT.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942592A4C36CD002383EE /* DatabaseManager+ChatGPT.swift */; };
+		C9C942692A4C36CF002383EE /* ChatGPTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9425B2A4C36CD002383EE /* ChatGPTModel.swift */; };
+		C9C9426A2A4C36CF002383EE /* ChatGPTBottomPopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9425D2A4C36CE002383EE /* ChatGPTBottomPopView.swift */; };
+		C9C9426B2A4C36CF002383EE /* ChatGPTClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9425E2A4C36CE002383EE /* ChatGPTClientCell.swift */; };
+		C9C9426C2A4C36CF002383EE /* ChatGPTPopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C9425F2A4C36CE002383EE /* ChatGPTPopViewCell.swift */; };
+		C9C9426D2A4C36CF002383EE /* ChatGPTBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942602A4C36CE002383EE /* ChatGPTBottomView.swift */; };
+		C9C9426E2A4C36CF002383EE /* ChatGPTServerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942612A4C36CE002383EE /* ChatGPTServerCell.swift */; };
+		C9C9426F2A4C36CF002383EE /* ChatGPTHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942622A4C36CE002383EE /* ChatGPTHeaderView.swift */; };
+		C9C942712A4C36CF002383EE /* ChatGPTTableFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942642A4C36CE002383EE /* ChatGPTTableFooterView.swift */; };
+		C9C942722A4C36CF002383EE /* ChatGPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C942662A4C36CF002383EE /* ChatGPTViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +50,6 @@
 /* Begin PBXFileReference section */
 		C9C9421E2A4C33AC002383EE /* ChatGPTDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatGPTDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C942212A4C33AC002383EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C9C942232A4C33AC002383EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C9C942252A4C33AD002383EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C9C942282A4C33AD002383EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C9C9422A2A4C33B0002383EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +60,19 @@
 		C9C9423E2A4C33B0002383EE /* ChatGPTDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatGPTDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9C942422A4C33B0002383EE /* ChatGPTDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTDemoUITests.swift; sourceTree = "<group>"; };
 		C9C942442A4C33B0002383EE /* ChatGPTDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C9C942522A4C364A002383EE /* ChatGPTRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTRequest.swift; sourceTree = "<group>"; };
+		C9C942532A4C364A002383EE /* ChatGPTResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTResponse.swift; sourceTree = "<group>"; };
+		C9C942542A4C364A002383EE /* ChatGPTService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTService.swift; sourceTree = "<group>"; };
+		C9C942592A4C36CD002383EE /* DatabaseManager+ChatGPT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DatabaseManager+ChatGPT.swift"; sourceTree = "<group>"; };
+		C9C9425B2A4C36CD002383EE /* ChatGPTModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTModel.swift; sourceTree = "<group>"; };
+		C9C9425D2A4C36CE002383EE /* ChatGPTBottomPopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTBottomPopView.swift; sourceTree = "<group>"; };
+		C9C9425E2A4C36CE002383EE /* ChatGPTClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTClientCell.swift; sourceTree = "<group>"; };
+		C9C9425F2A4C36CE002383EE /* ChatGPTPopViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTPopViewCell.swift; sourceTree = "<group>"; };
+		C9C942602A4C36CE002383EE /* ChatGPTBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTBottomView.swift; sourceTree = "<group>"; };
+		C9C942612A4C36CE002383EE /* ChatGPTServerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTServerCell.swift; sourceTree = "<group>"; };
+		C9C942622A4C36CE002383EE /* ChatGPTHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTHeaderView.swift; sourceTree = "<group>"; };
+		C9C942642A4C36CE002383EE /* ChatGPTTableFooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTTableFooterView.swift; sourceTree = "<group>"; };
+		C9C942662A4C36CF002383EE /* ChatGPTViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatGPTViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +123,11 @@
 		C9C942202A4C33AC002383EE /* ChatGPTDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C9C942652A4C36CF002383EE /* Controller */,
+				C9C942582A4C36CD002383EE /* Model */,
+				C9C9425C2A4C36CE002383EE /* View */,
+				C9C942512A4C364A002383EE /* ChatGPT */,
 				C9C942212A4C33AC002383EE /* AppDelegate.swift */,
-				C9C942232A4C33AC002383EE /* SceneDelegate.swift */,
 				C9C942252A4C33AD002383EE /* ViewController.swift */,
 				C9C942272A4C33AD002383EE /* Main.storyboard */,
 				C9C9422A2A4C33B0002383EE /* Assets.xcassets */,
@@ -125,6 +152,47 @@
 				C9C942442A4C33B0002383EE /* ChatGPTDemoUITestsLaunchTests.swift */,
 			);
 			path = ChatGPTDemoUITests;
+			sourceTree = "<group>";
+		};
+		C9C942512A4C364A002383EE /* ChatGPT */ = {
+			isa = PBXGroup;
+			children = (
+				C9C942522A4C364A002383EE /* ChatGPTRequest.swift */,
+				C9C942532A4C364A002383EE /* ChatGPTResponse.swift */,
+				C9C942542A4C364A002383EE /* ChatGPTService.swift */,
+			);
+			path = ChatGPT;
+			sourceTree = "<group>";
+		};
+		C9C942582A4C36CD002383EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9C942592A4C36CD002383EE /* DatabaseManager+ChatGPT.swift */,
+				C9C9425B2A4C36CD002383EE /* ChatGPTModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C9C9425C2A4C36CE002383EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C9C9425D2A4C36CE002383EE /* ChatGPTBottomPopView.swift */,
+				C9C9425E2A4C36CE002383EE /* ChatGPTClientCell.swift */,
+				C9C9425F2A4C36CE002383EE /* ChatGPTPopViewCell.swift */,
+				C9C942602A4C36CE002383EE /* ChatGPTBottomView.swift */,
+				C9C942612A4C36CE002383EE /* ChatGPTServerCell.swift */,
+				C9C942622A4C36CE002383EE /* ChatGPTHeaderView.swift */,
+				C9C942642A4C36CE002383EE /* ChatGPTTableFooterView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C9C942652A4C36CF002383EE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C9C942662A4C36CF002383EE /* ChatGPTViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +326,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9C9426B2A4C36CF002383EE /* ChatGPTClientCell.swift in Sources */,
 				C9C942262A4C33AD002383EE /* ViewController.swift in Sources */,
+				C9C942692A4C36CF002383EE /* ChatGPTModel.swift in Sources */,
+				C9C9426F2A4C36CF002383EE /* ChatGPTHeaderView.swift in Sources */,
+				C9C942722A4C36CF002383EE /* ChatGPTViewController.swift in Sources */,
+				C9C942712A4C36CF002383EE /* ChatGPTTableFooterView.swift in Sources */,
+				C9C942552A4C364B002383EE /* ChatGPTRequest.swift in Sources */,
+				C9C9426D2A4C36CF002383EE /* ChatGPTBottomView.swift in Sources */,
+				C9C942672A4C36CF002383EE /* DatabaseManager+ChatGPT.swift in Sources */,
+				C9C942562A4C364B002383EE /* ChatGPTResponse.swift in Sources */,
 				C9C942222A4C33AC002383EE /* AppDelegate.swift in Sources */,
-				C9C942242A4C33AD002383EE /* SceneDelegate.swift in Sources */,
+				C9C9426A2A4C36CF002383EE /* ChatGPTBottomPopView.swift in Sources */,
+				C9C9426C2A4C36CF002383EE /* ChatGPTPopViewCell.swift in Sources */,
+				C9C9426E2A4C36CF002383EE /* ChatGPTServerCell.swift in Sources */,
+				C9C942572A4C364B002383EE /* ChatGPTService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
